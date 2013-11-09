@@ -7,5 +7,8 @@ In our lives, whenever we encounter a great experience whether it be a great mov
 ##What's in this project?
 Along with writing the book, we felt that to really express the power of Sass, there needs to be a real life example project. A project that clearly illustrates how-to examples as we discuss the features themselves. By the end of the book and project, we are confident that you will go from CSS hacker to Sass master!
 
+##How to use this project
+Well ... not there yet. Hold tight, more details to come soon. Thinking something along the lines of release tags. But I'll let you know as I work it out.
+
 
 — Dale Sande and Kianosh Pourian
