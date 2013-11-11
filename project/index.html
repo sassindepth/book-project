@@ -1,19 +1,100 @@
 <!DOCTYPE html>
 <html class="no-js">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Sass in Depth book project</title>
-        <meta name="description" content="A project that clearly illustrates how-to examples as discussed in Sass in Depth. By the end of the book and project, we are confident that you will go from CSS hacker to Sass master!">
-        <meta keywords ="Dale Sande, Kianosh Pourian, Sass, SCSS, Sass in Depth">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Sass in Depth book project</title>
+      <meta name="description" content="A project that clearly illustrates how-to examples as discussed in Sass in Depth. By the end of the book and project, we are confident that you will go from CSS hacker to Sass master!">
+      <meta keywords ="Dale Sande, Kianosh Pourian, Sass, SCSS, Sass in Depth">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="stylesheets/reset.css">
-        <script src="javascripts/modernizr.js"></script>
+      <link rel="stylesheet" href="stylesheets/reset.css">
+      <link rel="stylesheet" href="stylesheets/base.css">
+      <link rel="stylesheet" href="stylesheets/layout.css">
+      <link rel="stylesheet" href="stylesheets/skeleton.css">
+      <script src="javascripts/modernizr.js"></script>
     </head>
     <body>
-        <!-- Add your site or application content here -->
-        <p>Hello world!</p>
+        <!-- Site header -->
+        <header class="site-header">Sass in Depth</header>
+
+        <!-- Primary site section -->
+        <section>
+
+          <!-- home page hero -->
+          <div class="hero">
+            <!-- place accent image using :after CSS -->
+            <div class="call-to-action">
+              <p>You want to click this</p>
+              <p>I know you do, I know.</p>
+              <button>click me</button>
+            </div>
+          </div>
+
+          <!-- services article container -->
+          <article class="services">
+            <header><h1>services</h1></header>
+            <p>copy goes here</p>
+            <div class="uid">
+              <h2>user interface design</h2>
+              <p>Aute craft beer meh qui, banjo pug letterpress roof party messenger bag selfies keffiyeh mlkshk.</p>
+            </div>
+            <div class="development">
+              <h2>development</h2>
+              <p>Aute craft beer meh qui, banjo pug letterpress roof party messenger bag selfies keffiyeh mlkshk.</p>
+            </div>
+            <div class="customize">
+              <h2>easily customizable</h2>
+              <p>Aute craft beer meh qui, banjo pug letterpress roof party messenger bag selfies keffiyeh mlkshk.</p>
+            </div>
+            <footer>Do you have special requirements for work?</footer>
+            <button>contact us</button>
+          </article>
+
+          <!-- recent projects article container -->
+          <article class="recent-projects">
+            <header>recent projects</header>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+          </article>
+        </section>
+
+        <!-- site footer -->
+        <footer class="site-footer">
+          <div class="contact">
+            <h3>contact</h3>
+            <ul>
+              <li>
+                <label>phone</label>
+                555.123.1234
+              </li>
+              <li>
+                <label>email</label>
+                <a href="">emailme@mail.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="about">
+            <p>Aute craft beer meh qui, banjo pug letterpress roof party messenger bag selfies keffiyeh mlkshk.</p>
+            <p>Aute craft beer meh qui, banjo pug letterpress roof party messenger bag selfies keffiyeh mlkshk.</p>
+          </div>
+          <div class="copyright">Copyright (c)2013 All rights reserved</div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- Scripts go here -->
         <script src="javascripts/jquery.min.js"></script>
