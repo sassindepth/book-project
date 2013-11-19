@@ -50,6 +50,10 @@
 
 /* #Basic Styles
 ================================================== */
+	* {
+		box-sizing: border-box;
+	}
+
 	body {
 		background: #fff;
 		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;

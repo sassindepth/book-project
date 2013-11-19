@@ -16,7 +16,9 @@
     </head>
     <body>
         <!-- Site header -->
-        <header class="site-header">Sass in Depth</header>
+        <header class="site-header gradient-background">
+          <h1 class="knockout-text" style="line-height: 2em;">Sass in Depth</h1>
+        </header>
 
         <!-- Primary site section -->
         <section>
@@ -32,21 +34,26 @@
           </div>
 
           <!-- services article container -->
-          <article class="services">
-            <header><h1>services</h1></header>
-            <p>copy goes here</p>
-            <div class="uid">
-              <h2>user interface design</h2>
-              <p>Aute craft beer meh qui, banjo pug letterpress roof party messenger bag selfies keffiyeh mlkshk.</p>
+          <article class="services container">
+
+            <!-- Container is purely for presentational purposes, offers no semantic value to the document -->
+            <div class="sixteen columns">
+              <header><h1>services</h1></header>
+              <p>copy goes here</p>
+              <div class="uid one-third column alpha">
+                <h2>user interface design</h2>
+                <p>Aute craft beer meh qui, banjo pug letterpress roof party messenger bag selfies keffiyeh mlkshk.</p>
+              </div>
+              <div class="development one-third column">
+                <h2>development</h2>
+                <p>Aute craft beer meh qui, banjo pug letterpress roof party messenger bag selfies keffiyeh mlkshk.</p>
+              </div>
+              <div class="customize one-third column omega">
+                <h2>easily customizable</h2>
+                <p>Aute craft beer meh qui, banjo pug letterpress roof party messenger bag selfies keffiyeh mlkshk.</p>
+              </div>
             </div>
-            <div class="development">
-              <h2>development</h2>
-              <p>Aute craft beer meh qui, banjo pug letterpress roof party messenger bag selfies keffiyeh mlkshk.</p>
-            </div>
-            <div class="customize">
-              <h2>easily customizable</h2>
-              <p>Aute craft beer meh qui, banjo pug letterpress roof party messenger bag selfies keffiyeh mlkshk.</p>
-            </div>
+
             <footer>Do you have special requirements for work?</footer>
             <button>contact us</button>
           </article>
@@ -61,25 +68,27 @@
         </section>
 
         <!-- site footer -->
-        <footer class="site-footer">
-          <div class="contact">
-            <h3>contact</h3>
-            <ul>
-              <li>
-                <label>phone</label>
-                555.123.1234
-              </li>
-              <li>
-                <label>email</label>
-                <a href="">emailme@mail.com</a>
-              </li>
-            </ul>
+        <footer class="site-footer container">
+          <div class="sixteen columns">
+            <div class="contact eight columns alpha">
+              <h3>contact</h3>
+              <ul>
+                <li>
+                  <label>phone</label>
+                  555.123.1234
+                </li>
+                <li>
+                  <label>email</label>
+                  <a href="">emailme@mail.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="about eight columns omega">
+              <p>Aute craft beer meh qui, banjo pug letterpress roof party messenger bag selfies keffiyeh mlkshk.</p>
+              <p>Aute craft beer meh qui, banjo pug letterpress roof party messenger bag selfies keffiyeh mlkshk.</p>
+            </div>
           </div>
-          <div class="about">
-            <p>Aute craft beer meh qui, banjo pug letterpress roof party messenger bag selfies keffiyeh mlkshk.</p>
-            <p>Aute craft beer meh qui, banjo pug letterpress roof party messenger bag selfies keffiyeh mlkshk.</p>
-          </div>
-          <div class="copyright">Copyright (c)2013 All rights reserved</div>
+          <div class="copyright sixteen columns">Copyright (c)2013 All rights reserved</div>
         </footer>
 
 
@@ -92,6 +101,7 @@
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-45593673-1']);
           _gaq.push(['_trackPageview']);
+          _gaq.push(['_setDomainName', 'none']);
           (function() {
             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';

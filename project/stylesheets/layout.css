@@ -16,6 +16,13 @@
 
 /* #Site Styles
 ================================================== */
+.gradient-background {
+	background-color: black;
+}
+
+.knockout-text {
+	color: #ffffff;
+}
 
 /* #Page Styles
 ================================================== */
