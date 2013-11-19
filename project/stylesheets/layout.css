@@ -16,6 +16,28 @@
 
 /* #Site Styles
 ================================================== */
+@font-face {
+    font-family: 'alfa_slab_oneregular';
+    src: url('../fonts/alfaslabone-regular-webfont.eot');
+    src: url('../fonts/alfaslabone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/alfaslabone-regular-webfont.woff') format('woff'),
+         url('../fonts/alfaslabone-regular-webfont.ttf') format('truetype'),
+         url('../fonts/alfaslabone-regular-webfont.svg#alfa_slab_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'port_lligat_slabregular';
+    src: url('../fonts/portlligatslab-regular-webfont.eot');
+    src: url('../fonts/portlligatslab-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/portlligatslab-regular-webfont.woff') format('woff'),
+         url('../fonts/portlligatslab-regular-webfont.ttf') format('truetype'),
+         url('../fonts/portlligatslab-regular-webfont.svg#port_lligat_slabregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .contact a, span.gc-cs-link {
 	color: white;
 	text-decoration: none;
@@ -27,6 +49,7 @@
 }
 
 .site-header h1 {
+	font-family: 'alfa_slab_oneregular';
 	margin-bottom: 0;
 }
 
@@ -60,6 +83,7 @@
 }
 
 .call-to-action p {
+	font-family: 'port_lligat_slabregular', serif;
 	font-size: 28px;
 	font-weight: bold;
 	text-shadow: 0 1px black;
@@ -67,7 +91,6 @@
 	line-height: 1.5em;
 	margin-bottom: 0.25em;
 	background-color: rgba(0, 0, 0, 0.5);
-	font-family: 'arial narrow';
 }
 
 .call-to-action button {
@@ -90,9 +113,13 @@
 
 .main-header {
 	width: 100%;
-	font-family: 'arial narrow';
+	font-family: 'port_lligat_slabregular', serif;
 	text-align: center;
 	position: relative;
+}
+
+.main-header h1 {
+	font-family: 'port_lligat_slabregular', serif;
 }
 
 .main-header:before {
