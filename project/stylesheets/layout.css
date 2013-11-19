@@ -16,6 +16,11 @@
 
 /* #Site Styles
 ================================================== */
+.contact a, span.gc-cs-link {
+	color: white;
+	text-decoration: none;
+}
+
 .site-header {
 	border-bottom: solid 5px #45484d;
 	padding: 0 50px;
@@ -146,8 +151,114 @@
 	line-height: 100px;
 }
 
+.white-type {
+	color: #E0E0E0;
+	text-shadow: 0 1px 0 gray;
+	font-family: arial
+}
+
+.white-line {
+	border-bottom: 1px solid #BDBDBD;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.25);
+}
+
+.site-footer {
+	border-top: 2px solid black;
+}
+
 /* #Page Styles
 ================================================== */
+.recent-projects {
+	margin-bottom: 40px;
+}
+
+.project-one, .project-two, .project-three {
+	background-size: 100%;
+	height: 200px;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.project-one {
+	background: url(http://heykerrip.com/wp-content/uploads/2013/10/computer-screen-720x540.jpg);
+	background-size: 130%
+}
+
+.project-two {
+	background: url(http://2.bp.blogspot.com/-Kdxy5kxpDlM/Uh0hzn5V5sI/AAAAAAAASyE/GO-7cutCinA/s1600/Candy-Cane-Print.jpg);
+	background-size: 100%
+}
+
+.project-three {
+	background: url(http://shydesigns.com/wp-content/uploads/2013/10/Melodic-Design-%E2%80%93-Logo.jpg);
+	background-size: 100%
+}
+
+.project-one:hover .hover-text {
+	bottom: -20px;
+}
+
+.project-two:hover .hover-text {
+	bottom: -20px;
+}
+
+.project-three:hover .hover-text {
+	bottom: -20px;
+}
+
+
+.hover-text {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	font-weight: bold;
+	height: 100px;
+	color: white;
+	padding: 10px;
+	position: absolute;
+	bottom: -220px;
+	-webkit-transition: all 0.5s ease;
+}
+
+.contact {
+	position: relative;
+}
+
+.contact li label {
+	display: inline-block;
+	width: 100px;
+}
+
+.badges-container {
+	position: absolute;
+}
+
+.badges {
+	-webkit-transition: all 0.5s ease;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #333333;
+	font-size: 25px;
+	line-height: 50px;
+	text-align: center;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.badges:hover {
+	font-size: 3em;
+	width: 75px;
+	height: 75px;
+	line-height: 75px
+}
+
+.copyright {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+
 
 /* #Media Queries
 ================================================== */
