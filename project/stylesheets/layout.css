@@ -18,6 +18,7 @@
 ================================================== */
 .site-header {
 	border-bottom: solid 5px #45484d;
+	padding: 0 50px;
 }
 
 .site-header h1 {
@@ -43,6 +44,7 @@
 	background: url(../images/hero-image.jpg) -120px -120px;
 	padding: 50px 15px 70px;
 	border-bottom: 1px solid black;
+	margin-bottom: 80px;
 }
 
 .call-to-action {
@@ -79,6 +81,47 @@
 	height: 330px;
 	background: url(../images/imac.png) 0 0 no-repeat	;
 	background-size: 100%;
+}
+
+.main-header {
+	width: 100%;
+	font-family: 'arial narrow';
+	text-align: center;
+	position: relative;
+}
+
+.main-header:before {
+	display: block;
+	content: '';
+	position: absolute;
+	width: 300px;
+	height: 1px;
+	top: 50%;
+	background-color: rgba(205, 201, 201, 0.5);
+}
+
+.main-header:after {
+	display: block;
+	content: '';
+	position: absolute;
+	width: 300px;
+	height: 1px;
+	top: 50%;
+	right: 0;
+	background-color: rgba(205, 201, 201, 0.5);
+}
+
+.heavy-top-border {
+	border-top: 4px;
+	border-bottom: 1px;
+	border-color: rgba(205, 201, 201, 0.5);
+	border-style: solid;
+}
+
+.box-gray {
+	background-color: rgba(235, 235, 245, 0.25);
+	padding: 10px 20px;
+	margin-bottom: 20px;
 }
 
 /* #Page Styles
