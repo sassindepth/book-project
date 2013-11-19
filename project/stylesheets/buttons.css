@@ -37,4 +37,11 @@
   text-shadow:1px 1px 0px #24609c;
 }
 
+.btn-small {
+  font-size: 18px;
+  line-height: 28px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 
