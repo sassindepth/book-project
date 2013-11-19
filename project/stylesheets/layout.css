@@ -124,6 +124,28 @@
 	margin-bottom: 20px;
 }
 
+.display-circle {
+	display: block;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 5px rgba(205, 201, 201, 0.5);
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #70d9ff), color-stop(1, #3481cf) );
+  background:-moz-linear-gradient( center top, #70d9ff 5%, #3481cf 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#70d9ff', endColorstr='#3481cf');
+  margin: 10px auto 15px;
+}
+
+.display-icon {
+	font-size: 60px;
+	text-shadow: 0 0 5px gray;
+	color: white;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+}
+
 /* #Page Styles
 ================================================== */
 
