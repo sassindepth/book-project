@@ -16,12 +16,69 @@
 
 /* #Site Styles
 ================================================== */
+.site-header {
+	border-bottom: solid 5px #45484d;
+}
+
+.site-header h1 {
+	margin-bottom: 0;
+}
+
 .gradient-background {
-	background-color: black;
+	background: #45484d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 
 .knockout-text {
 	color: #ffffff;
+}
+
+.hero {
+	background: url(../images/hero-image.jpg) -120px -120px;
+	padding: 50px 15px 70px;
+	border-bottom: 1px solid black;
+}
+
+.call-to-action {
+	width: 30%;
+	margin-left: 15%;
+	text-align: center;
+	position: relative;
+}
+
+.call-to-action p {
+	font-size: 28px;
+	font-weight: bold;
+	text-shadow: 0 1px black;
+	color: white;
+	line-height: 1.5em;
+	margin-bottom: 0.25em;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-family: 'arial narrow';
+}
+
+.call-to-action button {
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 1em;
+}
+
+.call-to-action:after {
+	display: block;
+	content: '';
+	position: absolute;
+	top: -5px;
+	right: -125%;
+	width: 400px;
+	height: 330px;
+	background: url(../images/imac.png) 0 0 no-repeat	;
+	background-size: 100%;
 }
 
 /* #Page Styles
