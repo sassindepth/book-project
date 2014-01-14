@@ -3,3 +3,68 @@
 
 // Typically, commented out variables signify a !default setting at a
 // lower level module.
+// Primary colors
+// -------------------------
+$blue:                  #3481CF !default;
+$white:                 #FFFFFF !default;
+$black:                 #000000 !default;
+$gray:                  #7F7F7F !default;
+
+// Derivative colors
+// -------------------------
+$dark-gray:             darken($gray, 23.14%) !default; //#444
+$darker-gray:           darken($dark-gray, 6.6667%) !default; //#333
+$darkest-gray:          darken($dark-gray, 17.25%) !default; //#181818
+
+//Font information
+//-----------------------
+$font-color:    $darker-gray;
+$anchor-color: $darker-gray;
+
+//Color pallete
+//-----------------------
+$primary-color: $blue;
+$secondary-color: $black;
+$tertiary-color: $white;
+
+//Font information
+//-----------------------
+$font-family: 	"Georgia", "Times New Roman", serif;
+$font-family-2: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-color: 	$darker-gray;
+
+//Selection colors
+// -------------------------
+$selection-background-color: 	$dark-blue;
+$selection-font-color: 			$white;
+
+//Anchor colors
+// -------------------------
+$anchor-color: 			$blue;
+$anchor-hover-color: 	adjust-hue($anchor-color, -26deg);
+$anchor-visited-color: 	lighten($blue, 10%);
+
+$invalid-background-color: $light-gray;
+
+// Browser prefixes
+// -------------------------
+$browser: -moz- -webkit- -o- -ms-;
+
+
+// Forms
+// -------------------------
+$base-line-height:        		20px !default;
+$base-border-radius:      		4px !default;
+$border-radius-large:     		6px !default;
+$border-radius-small:     		3px !default;
+$input-background:              $white !default;
+$input-border:                  #ccc !default;
+$input-border-radius:           $base-border-radius !default;
+$input-disabled-background:     $lighter-gray !default;
+$form-actions-background:       $off-white !default;
+$input-height:                  $base-line-height + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
+$input-width: 					200px;
+
+// URLs
+// -------------------------
+$image-base-url: '../images' !default;
