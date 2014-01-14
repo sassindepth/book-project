@@ -1,0 +1,19 @@
+/* #Font-Face
+================================================== */
+$font-base-url: '../fonts' !default;
+
+@font-face {
+  font-family: 'alfa_slab_oneregular';
+  src: url("#{$font-base-url}/alfaslabone-regular-webfont.eot");
+  src: url("#{$font-base-url}/alfaslabone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("#{$font-base-url}/alfaslabone-regular-webfont.woff") format("woff"), url("#{$font-base-url}/alfaslabone-regular-webfont.ttf") format("truetype"), url("#{$font-base-url}/alfaslabone-regular-webfont.svg#alfa_slab_oneregular") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'port_lligat_slabregular';
+  src: url("#{$font-base-url}/portlligatslab-regular-webfont.eot");
+  src: url("#{$font-base-url}/portlligatslab-regular-webfont.eot?#iefix") format("embedded-opentype"), url("#{$font-base-url}/portlligatslab-regular-webfont.woff") format("woff"), url("#{$font-base-url}/portlligatslab-regular-webfont.ttf") format("truetype"), url("#{$font-base-url}/portlligatslab-regular-webfont.svg#port_lligat_slabregular") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+}
