@@ -15,6 +15,17 @@ $gray:                  #7F7F7F !default;
 $dark-gray:             darken($gray, 23.14%) !default; //#444
 $darker-gray:           darken($dark-gray, 6.6667%) !default; //#333
 $darkest-gray:          darken($dark-gray, 17.25%) !default; //#181818
+$light-gray: 			lighten($gray, 10%) !default;
+$lighter-gray: 			lighten($gray, 20%) !default;
+$off-white: 			darken($white, 10%) !default;
+$dark-blue: 			darken($blue, 20%) !default;
+
+//button colors
+// -------------------------
+$primary-button-primary-color: $blue !default;
+$primary-button-secondary-color: adjust-hue(lighten($blue, 11%), -14deg) !default;
+$primary-button-tertiary-color: lighten($blue, 36%) !default;
+$primary-button-quaternary-color: lighten($blue, 44%) !default;
 
 //Font information
 //-----------------------
@@ -29,8 +40,8 @@ $tertiary-color: $white;
 
 //Font information
 //-----------------------
-$font-family: 	"Georgia", "Times New Roman", serif;
-$font-family-2: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$primary-font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$secondary-font-family: "Georgia", "Times New Roman", serif;
 $font-color: 	$darker-gray;
 
 //Selection colors

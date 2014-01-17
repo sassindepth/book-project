@@ -1,0 +1,72 @@
+// Table of Content
+//==================================================
+//  #Add-Border Mixin
+//  #Add-Border-Radius Mixin
+//  #Box-Shadow Mixin
+//  #Background-Clip Mixin
+//  #Text-Stroke Mixin
+
+// #Add-Border Mixin
+//==================================================
+$border-position-all: 'all' !default;
+$border-default-size: 1px !default;
+$border-default-pattern: solid !default;
+$border-default-color: $black !default;
+
+@mixin add-border(
+    $border-position: $border-position-all, 
+    $border-size: $border-default-size, 
+    $border-pattern: $border-default-pattern, 
+    $border-color: $border-default-color) {
+	@if $border-position == 'all' {
+		border: $border-size $border-pattern $border-color;
+	} @else {
+		border-#{$border-position}: $border-size $border-pattern $border-color;
+	}
+}
+
+// #Add-Border-Radius Mixin
+//==================================================
+$border-radius-position-all: 'all' !default;
+$border-radius-default-size: 1px !default;
+@mixin add-border-radius($border-radius-position: $border-radius-position-all, $border-radius: $border-radius-default-size) {
+	@if $border-radius-position == 'all' {
+		border-radius: $border-radius;
+	} @else {
+		border-#{$border-radius-position}-radius: $border-radius;
+	}
+}
+
+// #Box-Shadow Mixin
+//==================================================
+@mixin box-shadow ($isInset: false, $hOffset: 0, $vOffset: 0, $blur: 0, $spread: 0, $color: #ccc) {
+	@if $isInset {
+		-moz-box-shadow: inset $hOffset $vOffset $blur $spread $color;
+		-webkit-box-shadow: inset $hOffset $vOffset $blur $spread $color;
+		box-shadow: inset $hOffset $vOffset $blur $spread $color;
+	} @else {
+		-moz-box-shadow: $hOffset $vOffset $blur $spread $color;
+		-webkit-box-shadow: $hOffset $vOffset $blur $spread $color;
+		box-shadow: $hOffset $vOffset $blur $spread $color;
+	}
+}
+
+// #Background-Clip Mixin
+//==================================================
+@mixin background-clip($clip) {
+  -webkit-background-clip: $clip;
+     -moz-background-clip: $clip;
+          background-clip: $clip;
+}
+
+// #Text-Stroke Mixin
+//==================================================
+@mixin text-stroke ($stroke-width: 1px, $stroke-color: #000) {
+  -webkit-text-stroke: $stroke-width $stroke-color;
+  $negative-stroke-width: $stroke-width * -1;
+  text-shadow: 
+    $negative-stroke-width $negative-stroke-width 0 #000,  
+    $stroke-width $negative-stroke-width 0 #000,
+    $negative-stroke-width $stroke-width 0 #000,
+    $stroke-width $stroke-width 0 #000;  
+}

@@ -2,16 +2,25 @@
 // *------------------------------------------------------------------------------
 @import "config";  // Editing the config file sets the theme for the project
 
+// Import Fonts to be used on the site
+// *------------------------------------------------------------------------------
+@import "typography/manifest";
+
+// Import Helper mixins and functions
+// *------------------------------------------------------------------------------
+@import "helpers/manifest";
 
 // Standard CSS reset stuff here
 // *------------------------------------------------------------------------------
 @import "legacy/reset";  // temp pointer to legacy reset
 
-
 // Import legacy CSS converted SCSS files
 // *------------------------------------------------------------------------------
 @import "legacy/manifest";
 
+// Import the modules
+// *------------------------------------------------------------------------------
+@import "modules/manifest";
 
 // Build out custom styles
 // *------------------------------------------------------------------------------
@@ -21,7 +30,10 @@
 // UI Patterns and Modules
 // State is addressed within the component code itself
 @import "ui_patterns/manifest";
-@import "modules/manifest";
 
 // Layouts
 @import "layouts/manifest";
+
+// Import Font Awesome
+// *------------------------------------------------------------------------------
+@import "typography/font-awesome"
