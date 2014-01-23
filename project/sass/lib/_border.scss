@@ -1,0 +1,18 @@
+// #Add-Border Mixin
+//==================================================
+$border-position-all: 'all' !default;
+$border-default-size: 1px !default;
+$border-default-pattern: solid !default;
+$border-default-color: $black !default;
+
+@mixin add-border(
+    $border-position: $border-position-all, 
+    $border-size: $border-default-size, 
+    $border-pattern: $border-default-pattern, 
+    $border-color: $border-default-color) {
+	@if $border-position == 'all' {
+		border: $border-size $border-pattern $border-color;
+	} @else {
+		border-#{$border-position}: $border-size $border-pattern $border-color;
+	}
+}

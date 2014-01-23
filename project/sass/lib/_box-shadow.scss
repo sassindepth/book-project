@@ -1,0 +1,9 @@
+// #Box-Shadow Mixin
+//==================================================
+@mixin box-shadow ($isInset: false, $hOffset: 0, $vOffset: 0, $blur: 0, $spread: 0, $color: #ccc) {
+	@if $isInset {
+		box-shadow: inset $hOffset $vOffset $blur $spread $color;
+	} @else {
+		box-shadow: $hOffset $vOffset $blur $spread $color;
+	}
+}

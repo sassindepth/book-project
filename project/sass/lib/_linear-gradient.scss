@@ -1,0 +1,60 @@
+// Table of Content
+//==================================================
+//  #Linear-Gradient-Colors Function
+//  #Linear-Gradient-Colors Function (shortened)
+//  #Linear-Gradient Mixin
+//  #Background-Image-Linear-Gradient Mixin 
+
+// #Linear-Gradient-Colors Function
+//================================================== 
+@function linearGradientColors($stop-colors...) {
+  $full: false; 
+  @each $stop-color in $stop-colors{
+    @if $full {
+      $full: $full + ',' + $stop-color;
+    } @else {
+      $full: $stop-color;
+    }
+  }
+  
+  $full: unquote($full);
+
+  @return $full;
+}
+
+// #Linear-Gradient-Colors Function (shortened)
+//================================================== 
+@function lgc($stop-colors...) {
+  @return linearGradientColors($stop-colors...);
+}
+
+// #Linear-Gradient Mixin
+//================================================== 
+@mixin linear-gradient($pos, $stop-colors...) {
+                       
+  // Detect what type of value exists in $pos
+  $pos-type: type-of(nth($pos, 1));
+
+  // If $pos is missing from mixin, reassign vars and add default position
+  @if ($pos-type == color) or (nth($pos, 1) == "transparent")  {
+    $pos: top; // Default position
+	}
+	
+  $pos: unquote($pos);
+
+  $full: lgc($stop-colors...);
+  
+  // Set the first stop-color as the default fallback color
+  $fallback-color: nth(nth($stop-colors, 1), 1);
+
+  background: $fallback-color;
+  background: linear-gradient($pos, $full);
+}
+
+// #Background-Image-Linear-Gradient Mixin
+//================================================== 
+@mixin add-background-image-gradient($url, $position, $repeat, $gradient-pos, $stop-colors...){
+  $full: lgc($stop-colors...);
+  background: $url $position $repeat, nth(nth($stop-colors, 1), 1);
+  background: $url $position $repeat, linear-gradient($gradient-pos, $full);
+}
